@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="your.package.MainController" spacing="10" alignment="CENTER">
+    <Label text="Personal Budget Tracker" />
+    <Button text="Fetch Currency Data" onAction="#handleFetchData" />
+    <TableView fx:id="currencyTableView">
+        <columns>
+            <TableColumn text="Currency" fx:id="currencyColumn" />
+            <TableColumn text="Rate" fx:id="rateColumn" />
+        </columns>
+    </TableView>
+</VBox>
